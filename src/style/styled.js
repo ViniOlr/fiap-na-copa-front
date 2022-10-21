@@ -7,6 +7,34 @@ export const Container = styled.div`
     padding: 0 2%;
 `;
 
+export const TituloPrincipal = styled.h2`
+    margin-bottom: 40px;
+    font-size: 1.6em;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    ::before {
+        content: '';
+        width: 50%;
+        height: 4px;
+        background-color: var(--vermelho-qtar);
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.3s;
+    }
+    :hover::before {
+        width: 75%;
+    }
+    svg {
+        font-size: 1.3em;
+        margin-right: 7px;
+    }
+`;
+
 export const SectionHeader = styled.header`
     background-color: var(--vermelho-qtar);
     padding: 30px 0;
@@ -108,6 +136,10 @@ export const SectionLogin = styled.section`
             }
         }
     }
+`;
+
+export const SectionHome = styled.section`
+    margin: 30px 0;
 `;
 
 export const SectionFooter = styled.footer`
