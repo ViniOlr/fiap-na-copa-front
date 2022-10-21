@@ -1,10 +1,12 @@
 import React from 'react';
+import Header from './Components/Header/Header';
+import './App.css'
 
 function App() {
   return (
-    <div>
-      <h1>FIAP na copa!</h1>
-    </div>
+    <>
+      <Header />
+    </>
   );
 }
 
