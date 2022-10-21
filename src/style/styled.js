@@ -55,9 +55,67 @@ export const SectionHeader = styled.header`
     }
 `;
 
+export const SectionLogin = styled.section`
+    width: 100%;
+    height: 100%;
+    margin: 30px 0;
+    min-height: calc(100vh - 277px);
+    position: relative;
+    .formulario {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 750px;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.4);        
+        h2, p {
+            text-align: center;
+            margin: 15px 0;
+        }
+        p {
+            margin-bottom: 75px;
+        }
+        form {
+            width: 450px;
+            margin: 15px auto;
+            input {
+                width: 100%;
+                height: 30px;
+                font-size: 1.1em;
+                border: 0;
+                border-bottom: 1px solid gray;
+                background-color: transparent;
+                margin-bottom: 40px;
+                :focus {
+                    outline: 0;
+                }
+            }
+            button {
+                width: 100%;
+                padding: 10px 0;
+                font-size: 1.2em;
+                text-transform: uppercase;
+                border: 0;
+                border-radius: 20px;
+                background-color: var(--vermelho-qtar);
+                color: white;
+                cursor: pointer;
+                :hover {
+                    background-color: var(--dark-vermelho-qtar);
+                }
+            }
+        }
+    }
+`;
+
 export const SectionFooter = styled.footer`
+    width: 100%;
     background-color: gray;
     padding: 20px 0;
+    position: relative;
+    bottom: 0;
     .integrantes {
         ul {
             margin: 10px 0 0 30px;
