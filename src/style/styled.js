@@ -54,3 +54,13 @@ export const SectionHeader = styled.header`
         }
     }
 `;
+
+export const SectionFooter = styled.footer`
+    background-color: gray;
+    padding: 20px 0;
+    .integrantes {
+        ul {
+            margin: 10px 0 0 30px;
+        }
+    }
+`;
