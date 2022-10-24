@@ -90,15 +90,13 @@ export const SectionHeader = styled.header`
 export const SectionLogin = styled.section`
     width: 100%;
     height: 100%;
-    margin: 30px 0;
-    min-height: calc(100vh - 280px);
+    margin: 60px 0;
     position: relative;
     .formulario {
         width: 100%;
-        position: absolute;
+        position: relative;
         left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        transform: translateX(-50%);
         max-width: 750px;
         padding: 15px;
         background-color: rgba(255, 255, 255, 0.4);        

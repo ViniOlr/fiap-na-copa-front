@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, SectionFigs, TituloPrincipal } from '../../style/styled';
 import Figure from '../Figure';
 import FigBra1 from '../../img/ilovepdf_pages-to-jpg/BRAZIL_page-0002.jpg'
@@ -13,75 +13,88 @@ import FigBra9 from '../../img/ilovepdf_pages-to-jpg/BRAZIL_page-0010.jpg'
 import FigBra10 from '../../img/ilovepdf_pages-to-jpg/BRAZIL_page-0011.jpg'
 
 function FigsNacionais() {
-  return (
-    <SectionFigs>
-        <Container>
-            <TituloPrincipal>Figurinhas nacionais</TituloPrincipal>
-            <div className="figurinhas">
-                <Figure 
-                    id='figSingle'
-                    img={FigBra1}
-                    alt='Figurinha da copa do Mundo.'
-                    figcaption='Imagem tirada por mim mesmo do meu álbum da Copa.'
-                />
-                <Figure 
-                    id='figSingle'
-                    img={FigBra2}
-                    alt='Figurinha da copa do Mundo.'
-                    figcaption='Imagem tirada por mim mesmo do meu álbum da Copa.'
-                />
-                <Figure 
-                    id='figSingle'
-                    img={FigBra3}
-                    alt='Figurinha da copa do Mundo.'
-                    figcaption='Imagem tirada por mim mesmo do meu álbum da Copa.'
-                />
-                <Figure 
-                    id='figSingle'
-                    img={FigBra4}
-                    alt='Figurinha da copa do Mundo.'
-                    figcaption='Imagem tirada por mim mesmo do meu álbum da Copa.'
-                />
-                <Figure 
-                    id='figSingle'
-                    img={FigBra5}
-                    alt='Figurinha da copa do Mundo.'
-                    figcaption='Imagem tirada por mim mesmo do meu álbum da Copa.'
-                />
-                <Figure 
-                    id='figSingle'
-                    img={FigBra6}
-                    alt='Figurinha da copa do Mundo.'
-                    figcaption='Imagem tirada por mim mesmo do meu álbum da Copa.'
-                />
-                <Figure 
-                    id='figSingle'
-                    img={FigBra7}
-                    alt='Figurinha da copa do Mundo.'
-                    figcaption='Imagem tirada por mim mesmo do meu álbum da Copa.'
-                />
-                <Figure 
-                    id='figSingle'
-                    img={FigBra8}
-                    alt='Figurinha da copa do Mundo.'
-                    figcaption='Imagem tirada por mim mesmo do meu álbum da Copa.'
-                />
-                <Figure 
-                    id='figSingle'
-                    img={FigBra9}
-                    alt='Figurinha da copa do Mundo.'
-                    figcaption='Imagem tirada por mim mesmo do meu álbum da Copa.'
-                />
-                <Figure 
-                    id='figSingle'
-                    img={FigBra10}
-                    alt='Figurinha da copa do Mundo.'
-                    figcaption='Imagem tirada por mim mesmo do meu álbum da Copa.'
-                />
-            </div>
-        </Container>
-    </SectionFigs>
-  );
+
+    const verificar = sessionStorage.getItem("usuario-validado")
+
+    useEffect(()=>{
+        if (verificar == null) {
+            window.location = '/'
+        }
+    })
+
+    return (
+        <>
+            {verificar &&(
+                <SectionFigs>
+                    <Container>
+                        <TituloPrincipal>Figurinhas nacionais</TituloPrincipal>
+                        <div className="figurinhas">
+                            <Figure 
+                                id='figSingle'
+                                img={FigBra1}
+                                alt='Figurinha da copa do Mundo.'
+                                figcaption='Imagem tirada por mim mesmo do meu álbum da Copa.'
+                            />
+                            <Figure 
+                                id='figSingle'
+                                img={FigBra2}
+                                alt='Figurinha da copa do Mundo.'
+                                figcaption='Imagem tirada por mim mesmo do meu álbum da Copa.'
+                            />
+                            <Figure 
+                                id='figSingle'
+                                img={FigBra3}
+                                alt='Figurinha da copa do Mundo.'
+                                figcaption='Imagem tirada por mim mesmo do meu álbum da Copa.'
+                            />
+                            <Figure 
+                                id='figSingle'
+                                img={FigBra4}
+                                alt='Figurinha da copa do Mundo.'
+                                figcaption='Imagem tirada por mim mesmo do meu álbum da Copa.'
+                            />
+                            <Figure 
+                                id='figSingle'
+                                img={FigBra5}
+                                alt='Figurinha da copa do Mundo.'
+                                figcaption='Imagem tirada por mim mesmo do meu álbum da Copa.'
+                            />
+                            <Figure 
+                                id='figSingle'
+                                img={FigBra6}
+                                alt='Figurinha da copa do Mundo.'
+                                figcaption='Imagem tirada por mim mesmo do meu álbum da Copa.'
+                            />
+                            <Figure 
+                                id='figSingle'
+                                img={FigBra7}
+                                alt='Figurinha da copa do Mundo.'
+                                figcaption='Imagem tirada por mim mesmo do meu álbum da Copa.'
+                            />
+                            <Figure 
+                                id='figSingle'
+                                img={FigBra8}
+                                alt='Figurinha da copa do Mundo.'
+                                figcaption='Imagem tirada por mim mesmo do meu álbum da Copa.'
+                            />
+                            <Figure 
+                                id='figSingle'
+                                img={FigBra9}
+                                alt='Figurinha da copa do Mundo.'
+                                figcaption='Imagem tirada por mim mesmo do meu álbum da Copa.'
+                            />
+                            <Figure 
+                                id='figSingle'
+                                img={FigBra10}
+                                alt='Figurinha da copa do Mundo.'
+                                figcaption='Imagem tirada por mim mesmo do meu álbum da Copa.'
+                            />
+                        </div>
+                    </Container>
+                </SectionFigs>
+            )}
+        </>
+    );
 }
 
 export default FigsNacionais;
