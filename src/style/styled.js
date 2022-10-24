@@ -7,8 +7,12 @@ export const Container = styled.div`
     padding: 0 2%;
 `;
 
+export const Clear = styled.div`
+    clear: both;
+`;
+
 export const TituloPrincipal = styled.h2`
-    margin-bottom: 40px;
+    margin: 30px 0 40px 0;
     font-size: 1.6em;
     text-align: center;
     position: relative;
@@ -87,7 +91,7 @@ export const SectionLogin = styled.section`
     width: 100%;
     height: 100%;
     margin: 30px 0;
-    min-height: calc(100vh - 277px);
+    min-height: calc(100vh - 280px);
     position: relative;
     .formulario {
         width: 100%;
@@ -140,6 +144,60 @@ export const SectionLogin = styled.section`
 
 export const SectionHome = styled.section`
     margin: 30px 0;
+    .text {
+        font-size: 1.3em;
+        > div {
+            padding: 10px 0;
+        }
+        figure {
+            border: 1px solid white;
+            margin: 15px;
+        }
+        figcaption {
+            font-size: 0.7em;
+            margin: 5px;
+        }
+        figure#albumCopaDoMundo {
+            width: 400px;
+            float: right;
+            margin-left: 25px;
+            img {
+                width: 100%;
+            }
+            
+        }
+        figure#selecaoBrasileira {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        figure#paginaInicial,
+        figure#linhaDoTempo {
+            width: 30%;
+            float: left;
+            img {
+                width: 100%;
+            }
+        }
+        figure#estadios,
+        figure#paginaCoca {
+            width: 30%;
+            float: right;
+            img {
+                width: 100%;
+            }
+        }
+        p {            
+            margin-top: 15px;
+        }
+        h3 {
+            margin: 30px 0;
+        }
+        ul {
+            margin: 25px 0 25px 50px;
+        }
+    }
 `;
 
 export const SectionFooter = styled.footer`
