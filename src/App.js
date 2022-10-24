@@ -6,15 +6,18 @@ import Login from './Components/Login/Login';
 import Home from './Components/Home/Home';
 import FigsNacionais from './Components/FigsNacionais/FigsNacionais';
 import FigsInternacionais from './Components/FigsInternacionais/FigsInternacionais';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <>
       <Header />
-      {/* <Login /> */}
-      {/* <Home /> */}
-      {/* <FigsNacionais /> */}
-      <FigsInternacionais />
+        <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/login' element={<Login />  } />
+            <Route path='/figsNacionais' element={<FigsNacionais />  } />
+            <Route path='/figsInternacionais' element={<FigsInternacionais />  } />
+        </Routes>
       <Footer />
     </>
   );

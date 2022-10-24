@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Container, SectionHeader } from '../../style/styled';
 
 
@@ -11,10 +12,11 @@ const Header = ()=> {
             <h1>FIAP na Copa</h1>
             <nav>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">Figuinhas Nacionais</a></li>
-                    <li><a href="/">Figuinhas Internacionais</a></li>
-                    <li><button>Logar</button></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/figsNacionais">Figuinhas Nacionais</Link></li>
+                    <li><Link to="/figsInternacionais">Figuinhas Internacionais</Link></li>
+                    <li><Link to="/login"><button>Logar</button></Link></li>
+                    <li></li>
                 </ul>
             </nav>
         </Container>
