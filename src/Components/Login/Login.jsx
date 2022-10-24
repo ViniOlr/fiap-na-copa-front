@@ -25,7 +25,7 @@ const Login = ()=> {
         };
 
         const response = await fetch(
-            "http://localhost:8080/ControleAcesso/rest/login/",
+            "http://localhost:8080/fiap-na-copa-back/rest/login/",
            requestOptions
         );
 

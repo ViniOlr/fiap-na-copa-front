@@ -23,7 +23,7 @@ const Header = ()=> {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/figsNacionais">Figuinhas Nacionais</Link></li>
                         <li><Link to="/figsInternacionais">Figuinhas Internacionais</Link></li>
-                        <li><Link to="/login"><button>{usuario} Logar</button></Link></li>
+                        <li><Link to="/login"><button>{usuario} Login</button></Link></li>
                     </ul>
                 </nav>
             </Container>
