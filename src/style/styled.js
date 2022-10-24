@@ -142,51 +142,49 @@ export const SectionLogin = styled.section`
     }
 `;
 
+export const FigureContent = styled.div`
+    figure{
+        border: 1px solid white;
+        margin: 15px;
+        img {
+            width: 100%;
+        }
+        figcaption {
+            font-size: 0.7em;
+            margin: 5px;
+        }
+    }
+    
+    figure#albumCopaDoMundo {
+        width: 400px;
+        float: right;
+        margin-left: 25px;
+        
+    }
+    figure#selecaoBrasileira {
+        width: 100%;
+    }
+    figure#paginaInicial,
+    figure#linhaDoTempo {
+        width: 30%;
+        float: left;
+    }
+    figure#estadios,
+    figure#paginaCoca {
+        width: 30%;
+        float: right;
+    }
+    figure#figSingle {
+        width: 250px;
+    }
+`;
+
 export const SectionHome = styled.section`
     margin: 30px 0;
     .text {
         font-size: 1.3em;
         > div {
             padding: 10px 0;
-        }
-        figure {
-            border: 1px solid white;
-            margin: 15px;
-        }
-        figcaption {
-            font-size: 0.7em;
-            margin: 5px;
-        }
-        figure#albumCopaDoMundo {
-            width: 400px;
-            float: right;
-            margin-left: 25px;
-            img {
-                width: 100%;
-            }
-            
-        }
-        figure#selecaoBrasileira {
-            width: 100%;
-            img {
-                width: 100%;
-            }
-        }
-        figure#paginaInicial,
-        figure#linhaDoTempo {
-            width: 30%;
-            float: left;
-            img {
-                width: 100%;
-            }
-        }
-        figure#estadios,
-        figure#paginaCoca {
-            width: 30%;
-            float: right;
-            img {
-                width: 100%;
-            }
         }
         p {            
             margin-top: 15px;
@@ -197,6 +195,16 @@ export const SectionHome = styled.section`
         ul {
             margin: 25px 0 25px 50px;
         }
+    }
+`;
+
+export const SectionFigs = styled.section`
+    .figurinhas {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
 `;
 

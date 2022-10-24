@@ -6,7 +6,7 @@ import PaginaInicial from '../../img/ilovepdf_pages-to-jpg/Quadro de honra_page-
 import Estadios from '../../img/ilovepdf_pages-to-jpg/Quadro de honra_page-0002.jpg'
 import LinhaDoTempo from '../../img/ilovepdf_pages-to-jpg/Quadro de honra_page-0003.jpg'
 import CocaCola from '../../img/ilovepdf_pages-to-jpg/Quadro de honra_page-0004.jpg'
-import Figure from './Figure';
+import Figure from '../Figure';
 
 const Home = ()=> {
   return (
