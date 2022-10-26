@@ -17,13 +17,18 @@ const Header = ()=> {
     return (
         <SectionHeader>
             <Container>
-                <h1>FIAP na Copa</h1>
+                <h1>FIAP na Copa {usuario &&(<span>Seja Bem vindo {usuario}</span>)}</h1>
                 <nav>
                     <ul>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/figsNacionais">Figuinhas Nacionais</Link></li>
                         <li><Link to="/figsInternacionais">Figuinhas Internacionais</Link></li>
-                        <li><Link to="/login"><button>{usuario} Login</button></Link></li>
+                        {usuario === null &&(
+                            <li><Link to="/login"><button>Login</button></Link></li>
+                        )}
+                        {usuario &&(
+                            <li><button onClick={logout}>Logout</button></li>
+                        )}
                     </ul>
                 </nav>
             </Container>

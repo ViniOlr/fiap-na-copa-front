@@ -29,10 +29,12 @@ const Login = ()=> {
            requestOptions
         );
 
-        const data = await response.json()
+        const data = await response.json();
+
+        console.log(data)
 
         if(data.login) {
-            sessionStorage.setItem("usuario-validado", data.login)
+            sessionStorage.setItem("usuario-validado", data.nome)
         }
 
         if (data) {

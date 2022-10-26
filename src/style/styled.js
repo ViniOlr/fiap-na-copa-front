@@ -51,6 +51,12 @@ export const SectionHeader = styled.header`
         font-family: qatar2022arabic-heavy;
         font-weight: normal;
         color: white;
+        span {
+            display: block;
+            font-size: 0.5em;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
     }
     nav ul {
         list-style: none;
