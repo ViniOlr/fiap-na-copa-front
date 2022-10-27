@@ -218,6 +218,11 @@ export const SectionFooter = styled.footer`
     padding: 20px 0;
     position: relative;
     bottom: 0;
+    > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .integrantes {
         ul {
             margin: 10px 0 0 30px;
